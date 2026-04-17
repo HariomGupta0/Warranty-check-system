@@ -8,18 +8,14 @@ A modern decentralized application (DApp) designed to securely register, verify,
 
 ## 💻 Project Demonstration
 
-### 🎥 Video Tutorial
-> **Author Note:** Insert or link your video tutorial here! 
-> 
-> *[✏️ Click here to watch the full tutorial](https://youtube.com/your-link-here) or embed it below.*
-
 ### 📸 Screenshots
-*(Add some screenshots of your DApp in action below)*
-
 - **Registering a Warranty:** 
-  `![Register Warranty Placeholder](link-to-your-image.png)`
+  <img width="840" height="592" alt="image" src="https://github.com/user-attachments/assets/8741a163-696e-4312-ba53-ec4b926f8e2e" />
+
+
 - **Checking a Warranty:** 
-  `![Check Warranty Placeholder](link-to-your-image.png)`
+  <img width="833" height="592" alt="image" src="https://github.com/user-attachments/assets/6668e97d-1b6a-4cf5-8252-d7a97e81e03c" />
+
 
 ---
 
