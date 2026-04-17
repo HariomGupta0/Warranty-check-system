@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warranty Check System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">🛡️</div>
+            <h1>Warranty Check System</h1>
+            <p class="subtitle">Decentralized &bull; Secure &bull; Blockchain Powered</p>
+        </div>
+
+        <div id="wallet-section">
+            <button id="connectBtn" onclick="connectWallet()">
+                <span class="btn-icon">🦊</span> Connect MetaMask
+            </button>
+            <p id="walletAddress"></p>
+        </div>
+
+        <div class="cards-row">
+
+            <!-- Section 1: Add Warranty -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-icon">📝</span>
+                    <h2>Register Warranty</h2>
+                </div>
+                <div class="form-group">
+                    <label>Product ID</label>
+                    <input type="number" id="productId" placeholder="e.g. 101">
+                </div>
+                <div class="form-group">
+                    <label>Product Name</label>
+                    <input type="text" id="productName" placeholder="e.g. Laptop, Phone">
+                </div>
+                <div class="form-group">
+                    <label>Owner Name</label>
+                    <input type="text" id="ownerName" placeholder="e.g. Hariom Gupta">
+                </div>
+                <div class="form-group">
+                    <label>Warranty Duration (Days)</label>
+                    <input type="number" id="warrantyDays" placeholder="e.g. 365">
+                </div>
+                <button class="btn-primary" onclick="addWarranty()">Register Warranty</button>
+                <p id="addStatus"></p>
+            </div>
+
+            <!-- Section 2: Check Warranty -->
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-icon">🔍</span>
+                    <h2>Check Warranty</h2>
+                </div>
+                <div class="form-group">
+                    <label>Product ID</label>
+                    <input type="number" id="checkProductId" placeholder="Enter Product ID to verify">
+                </div>
+                <button class="btn-secondary" onclick="checkWarranty()">Verify Warranty</button>
+
+                <div id="result" style="display:none;">
+                    <div class="result-header">Warranty Details</div>
+                    <table>
+                        <tr>
+                            <td class="label-cell">Product ID</td>
+                            <td id="resProductId"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Product Name</td>
+                            <td id="resProductName"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Owner Name</td>
+                            <td id="resOwnerName"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Purchase Date</td>
+                            <td id="resPurchaseDate"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Warranty Days</td>
+                            <td id="resWarrantyDays"></td>
+                        </tr>
+                        <tr>
+                            <td class="label-cell">Status</td>
+                            <td id="resStatus"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="footer">Built with <strong>Solidity</strong> &bull; <strong>Truffle</strong> &bull;
+            <strong>Ganache</strong> &bull; <strong>Web3.js</strong></p>
+    </div>
+
+    <!-- Web3.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

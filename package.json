@@ -1,0 +1,13 @@
+{
+  "name": "warranty-check-system",
+  "version": "1.0.0",
+  "description": "Decentralized Warranty Check System using Blockchain",
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "test": "truffle test"
+  },
+  "devDependencies": {
+    "truffle": "^5.11.5"
+  }
+}

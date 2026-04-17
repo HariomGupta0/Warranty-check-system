@@ -1,0 +1,84 @@
+This version of ┬╡WS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_127.node'
+Require stack:
+- C:\Users\gupta\Documents\HARIOM\VI Sem\Blockchain\Warranty-check-system-main\Warranty-check-system-main\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\gupta\Documents\HARIOM\VI Sem\Blockchain\Warranty-check-system-main\Warranty-check-system-main\node_modules\ganache\dist\node\core.js
+- C:\Users\gupta\Documents\HARIOM\VI Sem\Blockchain\Warranty-check-system-main\Warranty-check-system-main\node_modules\truffle\build\migrate.bundled.js
+- C:\Users\gupta\Documents\HARIOM\VI Sem\Blockchain\Warranty-check-system-main\Warranty-check-system-main\node_modules\original-require\index.js
+- C:\Users\gupta\Documents\HARIOM\VI Sem\Blockchain\Warranty-check-system-main\Warranty-check-system-main\node_modules\truffle\build\cli.bundled.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\Migrations.sol
+> Compiling .\contracts\WarrantySystem.sol
+> Artifacts written to C:\Users\gupta\Documents\HARIOM\VI Sem\Blockchain\Warranty-check-system-main\Warranty-check-system-main\build\contracts
+> Compiled successfully using:
+   - solc: 0.8.19+commit.7dd6d404.Emscripten.clang
+
+
+Starting migrations...
+======================
+> Network name:    'development'
+> Network id:      5777
+> Block gas limit: 6721975 (0x6691b7)
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'Migrations'
+   ----------------------
+   > transaction hash:    0x9d1bb459a23e884aa18349a7e943efe98a342ad621f552ad33a0e8c4db632631
+- Blocks: 0            Seconds: 0
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x8078Ebc9c5E825191674Aa495736A2dd3A44E3C1
+   > block number:        5
+   > block timestamp:     1774425856
+   > account:             0xE1fB29b72D132343f6448b5A366F88b61e4dE5d0
+   > balance:             99.995001484768625728
+   > gas used:            242000 (0x3b150)
+   > gas price:           3.042116729 gwei
+   > value sent:          0 ETH
+   > total cost:          0.000736192248418 ETH
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.000736192248418 ETH
+
+
+2_deploy_warranty.js
+====================
+
+   Replacing 'WarrantySystem'
+   --------------------------
+   > transaction hash:    0xe61a145ca8227752ec7e2e1f630122aa5f8a5ba947d9b1801a141eb01c548744
+- Blocks: 0            Seconds: 0
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x2a98973bbFf149f24E90Ca30dB89639Bc61124D3
+   > block number:        7
+   > block timestamp:     1774425856
+   > account:             0xE1fB29b72D132343f6448b5A366F88b61e4dE5d0
+   > balance:             99.991919487017491151
+   > gas used:            1008584 (0xf63c8)
+   > gas price:           2.92014577 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00294521230128968 ETH
+
+- Saving migration to chain.
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:     0.00294521230128968 ETH
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.00368140454970768 ETH
+
+
